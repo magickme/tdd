@@ -1,2 +1,2 @@
-# tdd-node
-Learning test-driven development with Node, following the O'Reilly book on TDD.
+# tdd
+Learning test-driven development, following the O'Reilly book on TDD, and just with JS/Node to start. Python and Go later.
