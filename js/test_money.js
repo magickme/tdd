@@ -63,6 +63,13 @@ class MoneyTest {
         assert.throws(function() { bank.convert(tenEuros, "Kalganid") },
             expectedError);
     }
+    randomizeTestOrder(testMethods) {
+        for (let i = testMethods.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [testMethods[i], testMethods[j]] = [testMethods[j], testMethods[i]];
+        }
+        return testMethods;
+    }
     getAllTestMethods() {
         let moneyPrototype = MoneyTest.prototype;
         let allProps = Object.getOwnPropertyNames(moneyPrototype);
